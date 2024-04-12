@@ -14,7 +14,7 @@ routes(app);
 
 
 
-mongoose.connect(`mongodb+srv://Longson2003s:sonn2003@cluster0.khyqnu8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
+mongoose.connect(`mongodb+srv://Longson2003s:${process.env.MONGODB}@cluster0.khyqnu8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
 .then(() => {
     console.log('Connect Db successfully')
 })
